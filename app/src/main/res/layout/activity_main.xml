@@ -9,8 +9,10 @@
     tools:context=".Main">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="Esperando datos..."
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:maxLines="100"/>
 
 </RelativeLayout>
