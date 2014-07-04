@@ -22,6 +22,20 @@
             android:theme="@android:style/Theme.Dialog" >
         </activity>
 
+        <receiver
+            android:name=".MusicReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.music.metachanged" />
+                <action android:name="com.android.music.playstatechanged" />
+                <action android:name="com.android.music.playbackcomplete" />
+                <action android:name="com.android.music.queuechanged" />
+                <action android:name="com.spotify.mobile.android.metadatachanged" />
+                <action android:name="com.spotify.mobile.android.playbackstatechanged" />
+                <action android:name="com.spotify.mobile.android.queuechanged" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
